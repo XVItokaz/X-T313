@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Prediction Form</title>
+</head>
+<body>
+    <h1>Sales Prediction Form</h1>
+    <form action="/predict" method="post">
+        <label for="material_number">Material Number:</label>
+        <input type="text" id="material_number" name="material_number"><br><br>
+
+        <label for="month_year">MonthYear:</label>
+        <input type="text" id="month_year" name="month_year"><br><br>
+
+        <label for="day_of_week">DayOfWeek:</label>
+        <select id="day_of_week" name="day_of_week">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
